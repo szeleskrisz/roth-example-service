@@ -1,15 +1,15 @@
 # Instructions
 - Fork the roth-example-service repo
-- Clone and import the following project to an Eclipse workspace: https://github.com/aptexx/aptexx-test.git
-- Create a new database in MYSQL on localhost called aptexxtest (if your database connection parameters are different, you can change them in the Db.java file)
+- Clone and import the following project to an Eclipse workspace: https://github.com/roth-source/roth-example-service
+- Create a new database in MYSQL on localhost called rothexample (if your database connection parameters are different, you can change them in the Db.java file)
 - Run the seed.sql file in the docs directory against this new database
-- Create a new run configuration (Java application) called aptexx-test-server, use roth.lib.java.service.server.ServiceServer as the main class
+- Create a new run configuration (Java application) called roth-example-service-server, use roth.lib.java.service.server.ServiceServer as the main class
 - Run the service server using the run config you just created
-- Run the main() in aptexx.test/Test.java to ensure that the project is running properly
+- Run the main() in roth.example.test/Test.java to ensure that the project is running properly
 
 Review the existing sample code and any relevant framework code. You should be able to explain what's going on in the sample.
 
-Tasks
+# Java Tasks
 - Extend the database model to add some additional tables with foreign key relationships to the person table
 - Seed the data in your new tables as appropriate
 - Write the java model and table classes for these database tables using the same conventions as found in the Person and PersonTable classes
@@ -21,6 +21,6 @@ You should be able to explain to us how you accomplished the above tasks, step t
 * IMPORTANT Make sure you are able to step through and understand the service() method in the roth.lib.java.service.endpoint.HttpEndpoint dependency class.
   You can do this by putting a breakpoint on the service method. All traffic is funnelled through this method.
 
-SQL Tasks
+# SQL Tasks
 - Based on the modeling you created, write an example of a query that aggregates data from the data tables. Generally the queries should use MYSQL functions like COUNT(), SUM(), and GROUP BY.
 
