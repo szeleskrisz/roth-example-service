@@ -1,6 +1,6 @@
 # Instructions
 - Fork the roth-example-service repo
-- Clone and import the following project to an Eclipse workspace: https://github.com/roth-source/roth-example-service
+- Clone and import the forked project to an Eclipse workspace
 - Create a new database in MYSQL on localhost called rothexample (if your database connection parameters are different, you can change them in the Db.java file)
 - Run the seed.sql file in the docs directory against this new database
 - Create a new run configuration (Java application) called roth-example-service-server, use roth.lib.java.service.server.ServiceServer as the main class
