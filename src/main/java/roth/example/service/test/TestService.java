@@ -2,12 +2,11 @@ package roth.example.service.test;
 
 import roth.example.data.model.Person;
 import roth.example.data.table.PersonTable;
-import roth.example.service.AptexxService;
 import roth.lib.java.service.annotation.Service;
 import roth.lib.java.service.annotation.ServiceMethod;
 
 @Service(name = "test")
-public class TestService extends AptexxService
+public class TestService extends roth.example.service.Service
 {
 	
 	@ServiceMethod(api = true, ajax = false)

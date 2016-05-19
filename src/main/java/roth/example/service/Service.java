@@ -5,11 +5,11 @@ import roth.lib.java.service.HttpError;
 import roth.lib.java.service.HttpService;
 import roth.lib.java.service.reflector.MethodReflector;
 
-public class AptexxService extends HttpService
+public class Service extends HttpService
 {
 	protected Db db;
 	
-	public AptexxService()
+	public Service()
 	{
 		this.db = Db.get();
 	}

@@ -7,6 +7,7 @@ import roth.lib.java.http.HttpUrl;
 
 public class TestClient extends JsonApiClient<Object, Object>
 {
+	
 	public TestClient()
 	{
 		super(true);
@@ -22,4 +23,5 @@ public class TestClient extends JsonApiClient<Object, Object>
 	{
 		return post(url().addPath("getPerson"), request, GetPersonResponse.class);
 	}
+	
 }
