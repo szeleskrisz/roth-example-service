@@ -2,7 +2,7 @@ package roth.example.data;
 
 import java.io.PrintWriter;
 
-import roth.lib.java.db.mysql.MysqlDb;
+import roth.lib.java.jdbc.mysql.MysqlDb;
 
 public class Db extends MysqlDb
 {

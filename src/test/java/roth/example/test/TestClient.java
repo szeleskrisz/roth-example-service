@@ -3,7 +3,7 @@ package roth.example.test;
 import roth.example.service.test.GetPersonRequest;
 import roth.example.service.test.GetPersonResponse;
 import roth.lib.java.api.JsonApiClient;
-import roth.lib.java.net.http.HttpUrl;
+import roth.lib.java.http.HttpUrl;
 
 public class TestClient extends JsonApiClient<Object, Object>
 {

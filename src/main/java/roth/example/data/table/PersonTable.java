@@ -4,11 +4,10 @@ import java.util.LinkedList;
 
 import roth.example.data.Db;
 import roth.example.data.model.Person;
-import roth.lib.java.db.DbDataSource;
-import roth.lib.java.db.DbTable;
-import roth.lib.java.db.sql.Select;
+import roth.lib.java.jdbc.mysql.MysqlDbTable;
+import roth.lib.java.jdbc.sql.Select;
 
-public class PersonTable extends DbTable<Person>
+public class PersonTable extends MysqlDbTable<Person>
 {
 	protected Db db;
 	
@@ -24,7 +23,7 @@ public class PersonTable extends DbTable<Person>
 	}
 
 	@Override
-	public DbDataSource getDb()
+	public Db getDb()
 	{
 		return db;
 	}

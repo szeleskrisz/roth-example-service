@@ -1,6 +1,7 @@
 package roth.example.service;
 
 import roth.example.data.Db;
+import roth.lib.java.service.HttpError;
 import roth.lib.java.service.HttpService;
 import roth.lib.java.service.reflector.MethodReflector;
 
@@ -29,6 +30,13 @@ public class AptexxService extends HttpService
 	public boolean isAuthorized(MethodReflector methodReflector, Object request) 
 	{
 		return true;
+	}
+	
+	@Override
+	public HttpError exception(HttpError error, Throwable e)
+	{
+		// log
+		return error;
 	}
 	
 }

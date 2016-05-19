@@ -24,18 +24,18 @@
 		<dependency>
 			<groupId>roth.lib.java</groupId>
 			<artifactId>roth-lib-java-framework</artifactId>
-			<version>0.2.4-SNAPSHOT</version>
+			<version>0.2.6-SNAPSHOT</version>
 			<type>pom</type>
 		</dependency>
 		<dependency>
 			<groupId>roth.lib.java</groupId>
-			<artifactId>roth-lib-java-db-mysql</artifactId>
-			<version>0.2.4-SNAPSHOT</version>
+			<artifactId>roth-lib-java-jdbc-mysql</artifactId>
+			<version>0.2.6-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>roth.lib.java</groupId>
 			<artifactId>roth-lib-java-api</artifactId>
-			<version>0.2.4-SNAPSHOT</version>
+			<version>0.2.6-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.jetty.aggregate</groupId>
